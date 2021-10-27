@@ -18,6 +18,7 @@ int main(int argc, char const *argv[]) {
 
   if (argc < 3) {
     fprintf(stderr, "Usage: %s <FILE TO BE DUMP> <PHY ADDR>\n", argv[0]);
+    exit(1);
   }
 
   input_fd = open(argv[1], O_RDONLY);
